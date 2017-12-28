@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------
+
+              ReadMe for the Component Tester's Options Adapter
+
+         (c) 2014 by Markus Reschke (madires@theca-tabellaria.de)
+
+------------------------------------------------------------------------------
+
+Last edit:  2014-08-11
+
+
+* About
+
+The Component Tester is based on the project of Markus Frejek [1&2] and the
+successor project of Karl-Heinz Kübbeler [3&4]. The Options Adapter provides
+a simple way to extend the basic tester with a rotary encoder for the user
+interface and an input stage for the frequency counter function. Both
+options are based on the circuits of Karl-Heinz Kübbeler.
+
+
+* Safety Advice
+
+The Options Adapter doesn't provide any input protection for the frequency
+counter besides the AC coupling cap. Don't connect any signal sources with
+voltages higher than 5V!
+
+
+* What's in the box?
+
+Following files are in the archive:
+- this README
+- schematics in PDF format
+- schematics and PCB layout for Eagle 6.5.0 or later
+- pictures of my Component Tester with the Options Adapter
+
+
+* Layout
+
+The layout is optimized for a benchtop-type box and home lab PCB production.
+It allows you to mount the adapter perpendicular on the LCD module or in
+piggy-back style. You just need to change the pinheaders accordingly.
+
+
+* References
+
+[1] AVR-Transistortester, Markus Frejek,
+    Embedded Projects Journal, 2011-11
+
+[2] http://www.mikrocontroller.net/topic/131804
+    thread of Markus Frejek, Forum, 2009
+
+[3] http://www.mikrocontroller.net/articles/AVR-Transistortester
+    Online documentation of the Transistortester, Online Article, 2009-2011
+
+[4] http://www.mikrocontroller.net/articles/AVR_Transistortester
+    Short description of the TransistorTester, Karl-Heinz Kübbeler,
+    Online Article, 2012
+
+------------------------------------ EOF -------------------------------------

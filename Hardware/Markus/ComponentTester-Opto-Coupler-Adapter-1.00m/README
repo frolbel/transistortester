@@ -1,0 +1,56 @@
+------------------------------------------------------------------------------
+
+                   Component Tester's Opto Coupler Adapter
+
+         rotary encoder and frequency counter, HD44780 compatible
+
+          (c) 2016 by Markus Reschke (madires@theca-tabellaria.de)
+
+------------------------------------------------------------------------------
+
+Last edit:  2016-04-05
+
+
+* About
+
+The Component Tester is based on the project of Markus Frejek [1&2] and the
+successor project of Karl-Heinz Kübbeler [3&4]. The Opto Coupler Adapter
+provides a simple way to check opto couplers. It supports BJT types in DIL-4
+and DIL-6 packages, and also TRIAC types in DIL-6 package.
+
+
+* Safety Advice
+
+The Adapter doesn't provide any input protection. Don't connect any external
+signal! Only plug in one single opto coupler!
+
+
+* What's in the box?
+
+Following files are in the archive:
+- this README
+- schematics in PDF format
+- schematics and PCB layout for Eagle 7.5.0 or later
+
+
+* Layout
+
+The layout is optimized for home lab PCB production.
+
+
+* References
+
+[1] AVR-Transistortester, Markus Frejek,
+    Embedded Projects Journal, 2011-11
+
+[2] http://www.mikrocontroller.net/topic/131804
+    thread of Markus Frejek, Forum, 2009
+
+[3] http://www.mikrocontroller.net/articles/AVR-Transistortester
+    Online documentation of the Transistortester, Online Article, 2009-2011
+
+[4] http://www.mikrocontroller.net/articles/AVR_Transistortester
+    Short description of the TransistorTester, Karl-Heinz Kübbeler,
+    Online Article, 2012
+
+------------------------------------ EOF -------------------------------------

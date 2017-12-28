@@ -1,0 +1,90 @@
+------------------------------------------------------------------------------
+
+                  ReadMe for the Component Tester Hardware
+
+         (c) 2013 by Markus Reschke (madires@theca-tabellaria.de)
+
+------------------------------------------------------------------------------
+
+Last edit:  2013-03-22
+
+
+* About
+
+The Component Tester is based on the project of Markus Frejek [1&2] and the
+successor of Karl-Heinz Kübbeler [3&4].
+
+
+* Safety Advice
+
+The Component Tester is no DMM! It's a simple tester for components capable
+of measuring several things. The probes aren't protected in any way and
+won't survive higher voltages than 5V. Don't use the tester for live circuits!
+Just use it for unsoldered electronic components! If you test a capacitor make
+sure it's discharged before connecting the probes. This isn't just the Safety
+Sally, your life may be at risk if you connect the probes to a live circuit
+or a power supply (or even mains). 
+
+
+* What's different?
+
+Karl-Heinz has done a realy great documentation of the tester. I recommend
+to read it. Therefore I'll tell you just about the differences to the
+official release.
+
+
+* What's in the box?
+
+Following files are in the archive:
+- this README
+- schematics in PDF format
+- schematics and PCB layout for Eagle 6.4.0
+- pictures of my Component Tester
+
+
+* Circuit
+
+The circuit was extended with a current limiting PWM driver for the LED
+backlight of the LCD module. The PWM circuit is based on an idea of
+Eberhard Haug [5]. You'll find the details of the current sensing resistor
+for the current limiter in the schematics. Calculate the proper resistor
+values for the LCD module you're using.
+
+The tester has two power supply inputs, one for battery operation (9V) and
+another for an external power supply. The LCD backlight is powered by the
+latter input only. The supply voltage shouldn't exceed 12VDC because the
+low drop voltage regulator supports 13.2V at maximum (add 0.7V for the
+reverse protection diode).
+
+
+* Layout
+
+The layout is optimized for a benchtop-type box and home lab PCB production
+without through-hole plating. I recommend to use precision sockets for both
+ICs. They allow to solder the pins at the top layer without much trouble.
+You might need to grind the top layer pads for the crystal to prevent any
+short circuit of the leads via the metal case. Also the drill diameter of
+the pads for the ISP pinheader connector could require some rework.
+
+
+* References
+
+[1] AVR-Transistortester, Markus Frejek,
+    Embedded Projects Journal, 2011-11
+
+[2] http://www.mikrocontroller.net/topic/131804
+    thread of Markus Frejek, Forum, 2009
+
+[3] http://www.mikrocontroller.net/articles/AVR-Transistortester
+    Online documentation of the Transistortester, Online Article, 2009-2011
+
+[4] http://www.mikrocontroller.net/articles/AVR_Transistortester
+    Short description of the TransistorTester, Karl-Heinz Kübbeler,
+    Online Article, 2012
+
+[5] http://www.led-treiber.de/html/leds_grundlagen.html#PWM-Dimmer
+    Description of a LM339 based PWM circuit, Eberhard Haug.
+
+
+
+------------------------------------ EOF -------------------------------------
