@@ -790,7 +790,7 @@ void Servo_Check(void)
   Index = 0;                       /* #0 (20.0ms) */
   SweepStep = 0;
   SweepDir = 0;
-  Flag = RUN_FLAG | MODE_PULSE | CHANGE_PULSE | CHANGE_FREQ | UPDATE_FREQ | UPDATE_PULSE | UPDATE_FREQ;
+  Flag = FLAG_RUN | MODE_PULSE | CHANGE_PULSE | CHANGE_FREQ | UPDATE_FREQ | UPDATE_PULSE | UPDATE_FREQ;
 
   /*
    *  todo:

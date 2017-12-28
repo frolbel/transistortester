@@ -35,7 +35,7 @@
  *    to match your rotary encoder
  */
 
-//#define HW_ENCODER
+#define HW_ENCODER
 
 
 /*
@@ -45,7 +45,7 @@
  *  - adjust value to match your rotary encoder
  */
 
-#define ENCODER_PULSES   4
+#define ENCODER_PULSES   2
 
 
 /*
@@ -79,7 +79,7 @@
  *    reference
  */
 
-//#define HW_REF25
+#define HW_REF25
 
 
 /*
@@ -112,7 +112,7 @@
  *  - uncomment to enable
  */
 
-//#define HW_ZENER
+#define HW_ZENER
 
 
 /*
@@ -124,7 +124,7 @@
  *  - uncomment to enable
  */
 
-//#define HW_FREQ_COUNTER_BASIC
+#define HW_FREQ_COUNTER_BASIC
 
 
 /*
@@ -263,7 +263,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_UJT
+#define SW_UJT
 
 
 /*
@@ -273,7 +273,7 @@
  *  - edit colors.h to select correct probe colors
  */
 
-#define SW_PROBE_COLORS
+//#define SW_PROBE_COLORS
 
 
 /*
@@ -282,7 +282,7 @@
  *  - uncomment to enable
  */
 
-//#define SW_SERVO
+#define SW_SERVO
 
 
 
@@ -320,12 +320,12 @@
  *  - Russian (only 8x16 font horizontally aligned)
  */
 
-#define UI_ENGLISH
+//#define UI_ENGLISH
 //#define UI_GERMAN
 //#define UI_CZECH
 //#define UI_ITALIAN
 //#define UI_SPANISH
-//#define UI_RUSSIAN
+#define UI_RUSSIAN
 
 
 /*
